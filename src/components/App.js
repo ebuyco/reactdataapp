@@ -29,6 +29,7 @@ class App extends Component {
             </div>
           ) : (
             <div>
+              
               <button onClick={this.toggleDisplayBio}>Read more</button>
             </div>
           )
