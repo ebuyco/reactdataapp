@@ -22,6 +22,17 @@
     "start": "npm run build && live-server dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2"
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }
