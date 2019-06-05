@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter , Switch, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import App from './components/App';
 import Jokes from './components/Jokes';
@@ -11,9 +11,9 @@ import Header from './components/Header';
 import './index.css';
 
 ReactDOM.render(
-  <Router 
-  basename='React-Portfolio/'
-  history={createBrowserHistory()}
+  <BrowserRouter 
+  basename='React-dataapp/'
+   history={createBrowserHistory()}
   >
     <Switch>
       <Route exact path='/' render={() => <Header><App /></Header>} />
@@ -22,6 +22,6 @@ ReactDOM.render(
       <Route path='/evens-or-odds' render={() => <Header><EvensOrOdds /></Header>} />
       <Route path='/reaction' render={() => <Header><Reaction /></Header>} />
     </Switch>
-  </Router>,
+  </BrowserRouter >,
   document.getElementById('root')
 );
