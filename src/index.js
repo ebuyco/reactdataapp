@@ -12,6 +12,7 @@ import './index.css';
 
 ReactDOM.render(
   <BrowserRouter 
+  basename='React-dataapp'
   history={createBrowserHistory()}>
     <Switch>
       <Route exact path='/' render={() => <Header><App /></Header>} />
