@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://ebuyco.github.io/React-dataapp/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
