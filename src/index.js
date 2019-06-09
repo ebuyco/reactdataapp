@@ -9,6 +9,7 @@ import EvensOrOdds from './projects/evens-or-odds';
 import Reaction from './projects/reaction';
 import Header from './components/Header';
 import './index.css';
+import registerServiceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Router history={createBrowserHistory({
@@ -25,3 +26,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
+registerServiceWorker();
