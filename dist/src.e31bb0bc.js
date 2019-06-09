@@ -35789,7 +35789,9 @@ require("./index.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
-  history: (0, _createBrowserHistory.default)(basename = 'reactdataapp')
+  history: (0, _createBrowserHistory.default)({
+    basename: '/Portfolio'
+  })
 }, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
   exact: true,
   path: "/",
@@ -35845,7 +35847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60012" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62817" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

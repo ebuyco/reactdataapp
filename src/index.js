@@ -11,8 +11,9 @@ import Header from './components/Header';
 import './index.css';
 
 ReactDOM.render(
-  <Router history={createBrowserHistory(
-
+  <Router history={createBrowserHistory({
+    basename: '/Portfolio'
+  }
   )}>
     <Switch>
       <Route exact path='/' render={() => <Header><App /></Header>} />
