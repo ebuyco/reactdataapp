@@ -12,7 +12,7 @@ import './index.css';
 
 ReactDOM.render(
   <Router history={createBrowserHistory(
-    basename='reactdataapp'
+
   )}>
     <Switch>
       <Route exact path='/' render={() => <Header><App /></Header>} />
