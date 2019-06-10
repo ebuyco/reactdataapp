@@ -3,7 +3,7 @@ import Search from './Search';
 import Artist from './Artist';
 import Tracks from './Tracks';
 
-const API_ADDRESS = 'https://spotify-api-wrapper.appspot.com';
+const API_ADDRESS = 'your api code goes here i did add my api code because its private';
 
 class App extends Component {
   state = { artist: null, tracks: [] };
